@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch case with +,-,*,/</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var a=prompt("Enter first NO:");
+	var b=prompt("Enter second No:");
+	sum=a+b;
+	sub=a-b;
+	mul=a*b;
+	div=a/b;
+	choice=prompt("Enter an operator:")
+	switch(choice){
+		case '+':
+		document.write("Submition :"+ sum);
+		break;
+		case '-':
+		document.write("Substraction :" + sub);
+		break;
+		case '*':
+		document.write("Multiplication :" + mul);
+		break;
+	    case '/':
+	    	document.write("Divide :"+ div);
+	    	break;
+
+		default:
+		document.write("Choice not found");
+	}
+	</script>
+</body>
+</html>

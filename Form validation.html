@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Validation Using JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+  	function vali() {
+  		var mail=document.getElementById('mail').value;
+  		var phone=document.getElementById('tel').value;
+  		var pass=document.getElementById('pass').value;
+  		if(mail==""){
+  			alert("Enter a valid e-mail");
+  		}
+  		if(mail.indexof("@",0)<0){
+  			alert("Enter a valid e-mail");
+  		}
+  		if(mail.indexof(".",0)<0){
+  			alert("Enter a valid e-mail")
+  		}
+  		if(phone==0){
+  			alert("Enter your telephone no")
+  		}
+  		if(pass.length<6){
+  			alert("Password must be minimum 6 character")
+  		}
+  	}
+  </script>
+  <form>
+   Name:<br>
+   <input type="text" name="name"><br><br>	
+   Email id:<br>
+   <input type="email" name="email" id="mail"><br><br>
+   Phone No:<br>
+   <input type="tel" name="tel" id="tel"><br><br>
+   Password:<br>
+   <input type="Password" name="pass" id="pass"><br><br>
+   <button value="Submit" onclick="vali()">Submit</button>
+  </form>
+</body>
+</html>
